@@ -9,7 +9,7 @@ const initialState = {
 	toons: [
 		{
 			id: 1,
-			name: 'Vortild',
+			name: 'Example',
 			class: 'Mage',
 			tasks: {
 				raidBosses: 0,
