@@ -94,6 +94,7 @@ export default function ToonTable() {
 	};
 
 	const incrementDungeon = toonID => {
+		console.log('Incrementing dungeon count for ' + toonID);
 		dispatch({ type: 'INCREMENT_DUNGEON', payload: toonID });
 	};
 
