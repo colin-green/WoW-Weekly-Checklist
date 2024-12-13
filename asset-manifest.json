@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/WoW-Weekly-Checklist/static/css/main.e6c13ad2.css",
-    "main.js": "/WoW-Weekly-Checklist/static/js/main.10a06fbb.js",
+    "main.js": "/WoW-Weekly-Checklist/static/js/main.0f29c3fc.js",
     "static/js/453.ac80ae3c.chunk.js": "/WoW-Weekly-Checklist/static/js/453.ac80ae3c.chunk.js",
     "index.html": "/WoW-Weekly-Checklist/index.html",
     "main.e6c13ad2.css.map": "/WoW-Weekly-Checklist/static/css/main.e6c13ad2.css.map",
-    "main.10a06fbb.js.map": "/WoW-Weekly-Checklist/static/js/main.10a06fbb.js.map",
+    "main.0f29c3fc.js.map": "/WoW-Weekly-Checklist/static/js/main.0f29c3fc.js.map",
     "453.ac80ae3c.chunk.js.map": "/WoW-Weekly-Checklist/static/js/453.ac80ae3c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.10a06fbb.js"
+    "static/js/main.0f29c3fc.js"
   ]
 }
