@@ -41,7 +41,7 @@ const globalReducer = (state, action) => {
 					toon.id === action.payload && toon.tasks.raidBosses < 6
 						? {
 								...toon,
-								tasks: { ...toon.tasks, raidBosses: toon.tasks.raidBosses++ },
+								tasks: { ...toon.tasks, raidBosses: toon.tasks.raidBosses + 1 },
 						  }
 						: toon
 				),
@@ -53,7 +53,7 @@ const globalReducer = (state, action) => {
 					toon.id === action.payload && toon.tasks.raidBosses > 0
 						? {
 								...toon,
-								tasks: { ...toon.tasks, raidBosses: toon.tasks.raidBosses-- },
+								tasks: { ...toon.tasks, raidBosses: toon.tasks.raidBosses - 1 },
 						  }
 						: toon
 				),
@@ -65,7 +65,7 @@ const globalReducer = (state, action) => {
 					toon.id === action.payload && toon.tasks.dungeons < 8
 						? {
 								...toon,
-								tasks: { ...toon.tasks, dungeons: toon.tasks.dungeons++ },
+								tasks: { ...toon.tasks, dungeons: toon.tasks.dungeons + 1 },
 						  }
 						: toon
 				),
@@ -77,7 +77,7 @@ const globalReducer = (state, action) => {
 					toon.id === action.payload && toon.tasks.dungeons > 0
 						? {
 								...toon,
-								tasks: { ...toon.tasks, dungeons: toon.tasks.dungeons-- },
+								tasks: { ...toon.tasks, dungeons: toon.tasks.dungeons - 1 },
 						  }
 						: toon
 				),
@@ -89,7 +89,7 @@ const globalReducer = (state, action) => {
 					toon.id === action.payload && toon.tasks.delves < 8
 						? {
 								...toon,
-								tasks: { ...toon.tasks, delves: toon.tasks.delves++ },
+								tasks: { ...toon.tasks, delves: toon.tasks.delves + 1 },
 						  }
 						: toon
 				),
@@ -101,7 +101,7 @@ const globalReducer = (state, action) => {
 					toon.id === action.payload && toon.tasks.delves > 0
 						? {
 								...toon,
-								tasks: { ...toon.tasks, delves: toon.tasks.delves-- },
+								tasks: { ...toon.tasks, delves: toon.tasks.delves - 1 },
 						  }
 						: toon
 				),
