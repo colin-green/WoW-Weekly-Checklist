@@ -14,6 +14,7 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
+import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 
 export default function ToonTable() {
@@ -94,7 +95,6 @@ export default function ToonTable() {
 	};
 
 	const incrementDungeon = toonID => {
-		console.log('Incrementing dungeon count for ' + toonID);
 		dispatch({ type: 'INCREMENT_DUNGEON', payload: toonID });
 	};
 
@@ -178,14 +178,16 @@ export default function ToonTable() {
 							}}
 						>
 							<TableCell>
-								<IconButton
-									sx={{
-										color: 'error.main',
-									}}
-									onClick={() => handleDeleteToon(toon.id)}
-								>
-									<DeleteIcon />
-								</IconButton>
+								<Tooltip title='Delete'>
+									<IconButton
+										sx={{
+											color: 'error.main',
+										}}
+										onClick={() => handleDeleteToon(toon.id)}
+									>
+										<DeleteIcon />
+									</IconButton>
+								</Tooltip>
 							</TableCell>
 							<TableCell component='th' scope='row'>
 								<div style={{ display: 'flex', alignItems: 'center' }}>
